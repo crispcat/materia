@@ -40,11 +40,9 @@ public static class MeshGenerator
         dataPool.Push(state);
     }
     
-    public static void FindAndAllocMesh(Chunk chunk, Vector3Int startVoxel, MeshGeneratorState state)
+    public static void FindAndAddMesh(Chunk chunk, Vector3Int startVoxel, MeshGeneratorState state)
     {
-        int x = 1;
-        int y = 1;
-        int z = 1;
+        var size = new Vector3Int();
 
         for (int ix = startVoxel.x + 1; ix < Chunk.SIZE_1; ix++)
         {
@@ -52,7 +50,7 @@ public static class MeshGenerator
             if (chunk[i].mat == Material.Empty || state.included[i])
                 break;
             state.included[i] = true;
-            x++;
+            size.x++;
         }
 
         for (int iy = startVoxel.y + 1; iy < Chunk.SIZE_1; iy++)
@@ -68,7 +66,7 @@ public static class MeshGenerator
             if (!included) break;
             for (int ix = startVoxel.x; ix < Chunk.SIZE_1; ix++)
                 state.included[Chunk.FlatIndex(ix, iy, startVoxel.z)] = true;
-            y++;
+            size.y++;
         }
 
         for (int iz = startVoxel.z + 1; iz < Chunk.SIZE_1; iz++)
@@ -86,18 +84,9 @@ public static class MeshGenerator
             for (int ix = startVoxel.x; ix < Chunk.SIZE_1; ix++)
             for (int iy = startVoxel.y; iy < Chunk.SIZE_1; iy++)
                 state.included[Chunk.FlatIndex(ix, iy, iz)] = true;
-            z++;
+            size.z++;
         }
         
-        const float s = Voxel.SIZE;
-        var start = new Vector3(startVoxel.x * s, startVoxel.y * s, startVoxel.z * s);
-        chunk.vertices.Add(start);
-        chunk.vertices.Add(start + new Vector3(s * x, 0f,    0f));
-        chunk.vertices.Add(start + new Vector3(s * x, s * y, 0f));
-        chunk.vertices.Add(start + new Vector3(0f,    s * y, 0f));
-        chunk.vertices.Add(start + new Vector3(0f,    s * y, s * z));
-        chunk.vertices.Add(start + new Vector3(s * x, s * y, s * z));
-        chunk.vertices.Add(start + new Vector3(s * x, 0f,    s * z));
-        chunk.vertices.Add(start + new Vector3(0f,    0f,    s * z));
+        Geometry.AddHexVertices(chunk.vertices, startVoxel, size);
     }
 }

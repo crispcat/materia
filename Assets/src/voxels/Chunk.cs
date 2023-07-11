@@ -26,9 +26,11 @@ public class Chunk : MonoBehaviour
     {
         voxels = new Voxel[SIZE_3];
         vertices = new List<Vector3>(SIZE_3 / 10);
-        mesh = new Mesh { name = $"{gameObject.name}_chunk" };
-        mesh.indexFormat = IndexFormat.UInt16;
-        GetComponent<MeshFilter>().mesh = mesh;
+        GetComponent<MeshFilter>().mesh = mesh = new Mesh
+        {
+            name = $"{gameObject.name}_chunk",
+            indexFormat = IndexFormat.UInt16
+        };
     }
 
 #if DEBUG
@@ -45,7 +47,7 @@ public class Chunk : MonoBehaviour
         FlushMesh();
 #if DEBUG
         stopwatch.Stop();
-        Debug.Log($"Chunk built in {stopwatch.Elapsed.Milliseconds.ToString()} ms.");
+        Debug.Log($"Chunk {gameObject.name} built in {stopwatch.Elapsed.Milliseconds.ToString()} ms.");
 #endif
     }
 
@@ -68,14 +70,14 @@ public class Chunk : MonoBehaviour
         for (int y = 0; y < SIZE_1; y++)
         for (int x = 0; x < SIZE_1; x++)
             if (this[x, y, z].mat != Material.Empty && !state.included[FlatIndex(x, y, z)])
-                MeshGenerator.FindAndAllocMesh(this, new Vector3Int(x, y, z), state);
+                MeshGenerator.FindAndAddMesh(this, new Vector3Int(x, y, z), state);
         MeshGenerator.FreeState(state);
     }
 
     public void FlushMesh()
     {
         mesh.SetVertices(vertices);
-        int trianglesCount = vertices.Count / 8 * 12 * 3;
-        mesh.SetTriangles(Triangles.Sequence, trianglesStart: 0, trianglesCount, submesh: 0);
+        int trianglesCount = vertices.Count / 24 * 12 * 3;
+        mesh.SetTriangles(Geometry.Triangles, trianglesStart: 0, trianglesCount, submesh: 0);
     }
 }

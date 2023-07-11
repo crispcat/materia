@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15e4b37d-3746-4f8a-9ad4-88c386f9cd49" name="Changes" comment="" />
+    <list default="true" id="15e4b37d-3746-4f8a-9ad4-88c386f9cd49" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Materia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Materia/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/Chunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/voxels/Chunk.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/meshing/MeshGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/voxels/meshing/MeshGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/meshing/Triangles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/voxels/meshing/Geometry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/meshing/Triangles.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/voxels/meshing/Geometry.cs.meta" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,6 +102,7 @@
       <workItem from="1688784480635" duration="15169000" />
       <workItem from="1688818721138" duration="9653000" />
       <workItem from="1688978440571" duration="4423000" />
+      <workItem from="1689061516214" duration="2333000" />
     </task>
     <servers />
   </component>
@@ -106,38 +113,6 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/src/voxels/Chunk.cs</url>
-          <line>35</line>
-          <properties documentPath="E:\dev\Materia\Assets\src\voxels\Chunk.cs" initialLine="33" containingFunctionPresentation="Method 'FixedUpdate'">
-            <startOffsets>
-              <option value="908" />
-            </startOffsets>
-            <endOffsets>
-              <option value="920" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/src/voxels/Chunk.cs</url>
-          <line>65</line>
-          <properties documentPath="E:\dev\Materia\Assets\src\voxels\Chunk.cs" initialLine="65" containingFunctionPresentation="Method 'FlushMesh'">
-            <startOffsets>
-              <option value="2010" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2095" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
