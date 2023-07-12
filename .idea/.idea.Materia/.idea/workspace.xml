@@ -5,11 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15e4b37d-3746-4f8a-9ad4-88c386f9cd49" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/src/Extenssions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/src/Extenssions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/src/voxels/Constants.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/src/voxels/Constants.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/src/voxels/VoxelChunk.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/src/voxels/VoxelGeometry.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/src/voxels/VoxelMaterial.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Materia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Materia/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/Chunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/voxels/Chunk.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/meshing/MeshGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/voxels/meshing/MeshGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/meshing/Triangles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/voxels/meshing/Geometry.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/meshing/Triangles.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/voxels/meshing/Geometry.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/tests/TestScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/tests/TestScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/Chunk.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/Chunk.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/voxels/VoxelChunk.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/Material.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/Material.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/voxels/VoxelMaterial.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/MemPools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/voxels/MemPools.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/Voxel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/voxels/Voxel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/VoxelSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/voxels/VoxelSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/meshing.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/meshing/Geometry.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/meshing/Geometry.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/voxels/VoxelGeometry.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/meshing/MeshGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/voxels/MeshGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/voxels/meshing/MeshGenerator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/voxels/MeshGenerator.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +34,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/17484a9af6b944dea5cd9be4dbb0da2c171c00/51/4109b64a/Vector3Int.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/17484a9af6b944dea5cd9be4dbb0da2c171c00/6f/ec0f95bb/NativeArray`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/17484a9af6b944dea5cd9be4dbb0da2c171c00/92/2f8c675f/Mesh.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.8.7/Runtime/BurstCompileAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.6.1/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2S3SwIUHjV1ODaBxbArL9Hk1Wf2" />
@@ -103,6 +121,9 @@
       <workItem from="1688818721138" duration="9653000" />
       <workItem from="1688978440571" duration="4423000" />
       <workItem from="1689061516214" duration="2333000" />
+      <workItem from="1689083460567" duration="10478000" />
+      <workItem from="1689148136305" duration="4086000" />
+      <workItem from="1689156138209" duration="5190000" />
     </task>
     <servers />
   </component>
